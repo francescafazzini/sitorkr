@@ -38,23 +38,24 @@ em{
 }
 #what_we_do{
 	position: absolute;
-  width: 25vw;
+	margin-left: 5vw;
+  width: 30vw;
   text-align: center;
   padding-top:3px;
   padding-bottom:3px;
 }
 #projects{
 	position: absolute;
-  margin-left: 30vw;
-	width: 25vw;
+  margin-left: 35vw;
+	width: 30vw;
 	text-align: center;
   padding-top:3px;
   padding-bottom:3px;
 }
 #about_us{
 	position: absolute;
-	margin-left:60vw;
-	width: 25vw;
+	margin-left:65vw;
+	width: 30vw;
 	text-align: center;
   padding-top:3px;
   padding-bottom:3px;
