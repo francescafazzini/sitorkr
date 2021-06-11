@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Portfolio - Prima Effe</title>
+    <link href="style_mini.css" rel="stylesheet" type="text/css">
+    <link href="style_maxi.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body leftmargin="0" topmargin="0" onselectstart="return false">
+
+    <div id="banda_mobile" style="background-color:white;border-bottom: 0.1vw solid black"></div>
+
+    <div id="menu">
+      <div id="what_we_do" class="fondoBianco" style="border: 0.1vw solid transparent"> <a href="what_we_do.html"> What we do </a></div>
+      <div id="projects" class="fondoBianco" style="border: 0.1vw solid"> <a href="projects.html">Projects</a> </div>
+      <div id="about_us" class="fondoBianco" style="border: 0.1vw solid transparent"><a href="about_us.html"> About us</a> </div>
+    </div>
+
+    <img id="logoReflektor" src="assets/logo/reflektor_logo.png" alt="Reflektor_logo"></img>
+    <img id="logoFFFWD" src="assets/logo/FFFWD_logo.png" alt="FFForward_logo"></img>
+
+
+    <div id="desc">
+      <div id="titolo"><br>Prima Effe<br><br> </div>
+      Client <em>Feltrinelli</em> / <br><em>2017</em> <br><br>
+      Feltrinelli per la Scuola <br>is Gruppo Feltrinelli first project <br>in the educational field. <br><br><br>
+      <div id="read" onClick="scompare('visual');">Read more </div>
+    </div>
+
+
+    <div id="main">
+      <div id="visual">
+        <video width="100%" min-height="100%" autoplay loop> <source src="assets/PrimaEffe/cover.mp4" type="video/mp4"></video>
+        <img src="assets/PrimaEffe/costruzione_logo.png" style="width:100%" ></img>
+        <video width="100%" min-height="100%" controls > <source src="assets/PrimaEffe/intro.mp4" type="video/mp4"></video>
+        <img src="assets/PrimaEffe/palette.png" style="width:100%" ></img>
+        <img src="assets/PrimaEffe/poster.jpg" style="width:100%" ></img>
+        <img src="assets/PrimaEffe/poster_biglietti.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/PrimaEffe/maglia_borsa.png" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/PrimaEffe/website.jpg" style="width:100%;margin-top:20px" ></img>
+      </div>
+
+      <div id="testo">
+
+        We dealt with the naming and the art direction of Prima Effe visual identity with the aim of creating a fluid and dynamic system able to express all the activities offered by the project.<br><br>
+        In order to make the system instantly recognisable and closely related to Feltrinelli logotype, we developed Prima Effe visual identity starting from the famous symbol created by Bob Noorda.<br>
+        We created a fluid and dynamic identity made by four triangular elements that are free to move inside a specific grid.<br>
+        This visual asset allows to reinvent the logo in different shapes and to generate a continuously evolving system.<br><br>
+        The primary color palette includes three main bright and vibrant colors inspired by highlighters, as a reminder to the world of school in a contemporary way.<br>
+        Beside them, we also kept the institutional red of Feltrinelli identity.<br><br>
+        Both the naming and the endorsement are in New Century Schoolbook, the institutional Feltrinelli typeface, as a connection with the other Feltrinelli projects.<br><br>
+        Concerning the naming, Prima Effe combines a reference to the world of school to the fact that it is the first group project dedicated to the educational field coordinated by the Feltrinelli and among the first ones in Italy.
+        <br><br><br>
+
+      </div>
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+
+  document.getElementById("testo").style.display='none';
+
+  function scompare(visual) {
+    if(document.getElementById("visual").style.display=='') {
+       document.getElementById("visual").style.display='none';
+       document.getElementById("testo").style.display='';
+       document.getElementById("read").innerHTML = "Read less";
+    }
+    else{
+      document.getElementById("visual").style.display='';
+      document.getElementById("testo").style.display='none';
+      document.getElementById("read").innerHTML = "Read more";
+    }
+  }
+  </script>
+
+
+
+</html>
