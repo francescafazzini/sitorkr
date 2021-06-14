@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Portfolio - CambiaMondo</title>
+    <link href="style_mini.css" rel="stylesheet" type="text/css">
+    <link href="style_maxi.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body leftmargin="0" topmargin="0" onselectstart="return false">
+
+    <div id="banda_mobile" style="background-color:white"></div>
+
+    <div id="menu">
+      <div id="what_we_do" class="fondoBianco" style="border: 0.1vw solid transparent"> <a href="what_we_do.html"> What we do </a></div>
+      <div id="projects" class="fondoBianco" style="border: 0.1vw solid"> <a href="projects.html">Projects</a> </div>
+      <div id="about_us" class="fondoBianco" style="border: 0.1vw solid transparent"><a href="about_us.html"> About us</a> </div>
+    </div>
+
+    <img id="logoReflektor" src="assets/logo/reflektor_logo.png" alt="Reflektor_logo"></img>
+    <img id="logoFFFWD" src="assets/logo/FFFWD_logo.png" alt="FFForward_logo"></img>
+
+
+    <div id="desc">
+      <div id="titolo">CambiaMondo<br><br> </div>
+      Client <em>Siram by Veolia</em> / <br><em>2018</em> <br><br>
+      A multi touchpoint educational project dedicated to 6-10 years old kids. <br><br><br>
+      <div id="read" onClick="scompare('visual');">Read more </div>
+    </div>
+
+
+    <div id="main">
+      <div id="visual">
+        <video width="100%" min-height="100%" autoplay loop> <source src="assets/Cambiamondo/cover.mp4" type="video/mp4"></video>
+        <video style="margin-top:20px" width="100%" min-height="100%" controls > <source src="assets/Cambiamondo/intro.mp4" type="video/mp4"></video>
+        <img src="assets/Cambiamondo/riunione.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/Cambiamondo/disegno.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/Cambiamondo/libro.jpg" style="width:100%;margin-top:20px" ></img>
+      </div>
+
+      <div id="testo">
+        The assignment from Siram by Veolia, leader in energy management solutions, was to help them conceive and produce an educational long-term project.<br>
+        The main value and focus of this project? To convey the values of sustainability, energy efficiency and environmental responsibility to the youngest generations.<br>
+        Starting from Siram brand positioning and values, we’ve supported them developing “Cambiamondo”: a multi touchpoint educational project dedicated to 6-10 years old kids.<br><br>
+        “Cambiamondo” has been conceived with the ambition of educating the new generations in promoting, building and managing a more sustainable world through their everyday actions.<br>
+        In January 2019 the first two steps of the project will be launched: the book and the educational workshops.<br><br>
+        Published by Gribaudo – IF – Idee Editoriali Feltrinelli, the book “Cambiamondo” includes scientific experiments, engaging artistic exercises, stickers, games, challenges and video animations, alongside with content on sustainability, specifically addressed to the main target.
+      </div>
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+
+  document.getElementById("testo").style.display='none';
+
+  function scompare(visual) {
+    if(document.getElementById("visual").style.display=='') {
+       document.getElementById("visual").style.display='none';
+       document.getElementById("testo").style.display='';
+       document.getElementById("read").innerHTML = "Read less";
+    }
+    else{
+      document.getElementById("visual").style.display='';
+      document.getElementById("testo").style.display='none';
+      document.getElementById("read").innerHTML = "Read more";
+    }
+  }
+  </script>
+
+
+
+</html>
