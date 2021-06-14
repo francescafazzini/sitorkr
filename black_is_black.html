@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Portfolio - Black is Black</title>
+    <link href="style_mini.css" rel="stylesheet" type="text/css">
+    <link href="style_maxi.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body leftmargin="0" topmargin="0" onselectstart="return false">
+
+    <div id="banda_mobile" style="background-color:white"></div>
+
+    <div id="menu">
+      <div id="what_we_do" class="fondoBianco" style="border: 0.1vw solid transparent"> <a href="what_we_do.html"> What we do </a></div>
+      <div id="projects" class="fondoBianco" style="border: 0.1vw solid"> <a href="projects.html">Projects</a> </div>
+      <div id="about_us" class="fondoBianco" style="border: 0.1vw solid transparent"><a href="about_us.html"> About us</a> </div>
+    </div>
+
+    <img id="logoReflektor" src="assets/logo/reflektor_logo.png" alt="Reflektor_logo"></img>
+    <img id="logoFFFWD" src="assets/logo/FFFWD_logo.png" alt="FFForward_logo"></img>
+
+
+    <div id="desc">
+      <div id="titolo">Black is Black<br><br> </div>
+      Client <em>Geca Industrie Grafiche </em> / <br><em>2021</em> <br><br>
+      A sort of “total black limited edition” that has coated in black the brand communication. <br><br><br>
+      <div id="read" onClick="scompare('visual');">Read more </div>
+    </div>
+
+
+    <div id="main">
+      <div id="visual">
+        <video width="100%" min-height="100%" autoplay loop> <source src="assets/BlackIsBlack/cover.mp4" type="video/mp4"></video>
+        <video style="margin-top:20px" width="100%" min-height="100%" controls > <source src="assets/BlackIsBlack/intro.mp4" type="video/mp4"></video>
+        <video style="margin-top:20px" width="100%" min-height="100%" autoplay loop> <source src="assets/BlackIsBlack/costruzione_visual.mp4" type="video/mp4"></video>
+        <img src="assets/BlackIsBlack/poster_fronte.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/BlackIsBlack/poster_retro.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/BlackIsBlack/foto_costa.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/BlackIsBlack/foto_poster_retro.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/BlackIsBlack/foto_cofanetto.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/BlackIsBlack/foto_set.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/BlackIsBlack/instagram.jpg" style="width:100%" ></img>
+        <img src="assets/BlackIsBlack/sito.jpg" style="width:100%" ></img>
+        <video style="margin-top:20px" width="100%" min-height="100%" autoplay loop> <source src="assets/BlackIsBlack/timeline.mp4" type="video/mp4"></video>
+
+      </div>
+
+      <div id="testo">
+        In 2021 Rotobook introduced – first company in Europe – the usage of a new ink. Intense, deep, with an expanded greyscale and an excellent resolution, it ensures the traditional offset quality even using inkjet web printing.<br>
+We have been appointed by Geca – with which we already collaborated on the development of Rotobook project in 2019 – to study and realize a communication project  aimed to effectively present this upgrade.<br><br>
+With “the Rotobook pattern” as a main graphic element, we developed “Black is Black”: a sort of “total black limited edition” that has coated in black the brand communication at the time of its launch on all its channels, digital and traditional.<br><br>
+We also supported this particular visual identity with a short timeline of some of the moments in which the color black has been the protagonist of pop culture in the 20th century. From Chanel’s little black dress to the first appearance of Darth Vader, from the birth of Diabolik to Tarantino’s “Reservoir Dogs”…up to 2021, the year of “Black is Black”…
+      </div>
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+
+  document.getElementById("testo").style.display='none';
+
+  function scompare(visual) {
+    if(document.getElementById("visual").style.display=='') {
+       document.getElementById("visual").style.display='none';
+       document.getElementById("testo").style.display='';
+       document.getElementById("read").innerHTML = "Read less";
+    }
+    else{
+      document.getElementById("visual").style.display='';
+      document.getElementById("testo").style.display='none';
+      document.getElementById("read").innerHTML = "Read more";
+    }
+  }
+  </script>
+
+
+
+</html>

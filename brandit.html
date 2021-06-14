@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> Portfolio - Brandit</title>
+    <link href="style_mini.css" rel="stylesheet" type="text/css">
+    <link href="style_maxi.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Work+Sans' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body leftmargin="0" topmargin="0" onselectstart="return false">
+
+    <div id="banda_mobile" style="background-color:white"></div>
+
+    <div id="menu">
+      <div id="what_we_do" class="fondoBianco" style="border: 0.1vw solid transparent"> <a href="what_we_do.html"> What we do </a></div>
+      <div id="projects" class="fondoBianco" style="border: 0.1vw solid"> <a href="projects.html">Projects</a> </div>
+      <div id="about_us" class="fondoBianco" style="border: 0.1vw solid transparent"><a href="about_us.html"> About us</a> </div>
+    </div>
+
+    <img id="logoReflektor" src="assets/logo/reflektor_logo.png" alt="Reflektor_logo"></img>
+    <img id="logoFFFWD" src="assets/logo/FFFWD_logo.png" alt="FFForward_logo"></img>
+
+
+    <div id="desc">
+      <div id="titolo">Brandit<br><br> </div>
+      Client <em>Brandit</em> / <br><em>2020</em> <br><br>
+      One of the companies with the best reputation in the fields of Domain Management, Trademarks, and Online Brand Protection. <br><br><br>
+      <div id="read" onClick="scompare('visual');">Read more </div>
+    </div>
+
+
+    <div id="main">
+      <div id="visual">
+        <video width="100%" min-height="100%" autoplay loop> <source src="assets/Brandit/cover.mp4" type="video/mp4"></video>
+        <img src="assets/Brandit/concept.jpg" style="width:100%" ></img>
+        <img src="assets/Brandit/costruzione_marchio.jpg" style="width:100%" ></img>
+        <img src="assets/Brandit/costruzione_logotipo.jpg" style="width:100%" ></img>
+        <img src="assets/Brandit/toolkit.jpg" style="width:100%" ></img>
+        <img src="assets/Brandit/sito.jpg" style="width:100%;margin-top:20px" ></img>
+        <img src="assets/Brandit/wetransfer.jpg" style="width:100%;margin-top:20px" ></img>
+
+
+
+
+      </div>
+
+      <div id="testo">
+        Brandit is a dynamic and modern company.<br>
+With offices in Switzerland, Denmark, Malta and The Netherlands, and more the 700 clients, it is one of the companies with the best reputation in the fields of Domain Management, Trademarks, and Online Brand Protection.<br><br>
+At the core of its work are flexibility and a strong personal approach to the clients.So, how do you express flexibility and personal approach?<br>
+How can you help a brand vehicle those values in an efficient and engaging way?<br><br>
+Simply put, you look for a key element and the story behind the brand, and you have to put that story, and that main element, inside a new visual identity…<br>
+And that’s what we’ve done with Brandit.<br><br>
+Following a strategic consultancy and a thorough brand (re)positioning work, we developed a new, modern, visual identity with a (new) story behind it.<br><br>
+The core element – next to a new vibrant and bold color palette – is a graphic device based around the concept of an ever-changing rubber band. <br>
+A rubber-band can stretch, or adapt itself to an object. It also can secure something, or it can help to move things around…<br><br>
+Here, it represents the way Brandit moves, connects, and protects assets and ideas in a playful and contemporary way.
+      </div>
+    </div>
+
+
+  </body>
+  <script type="text/javascript">
+
+  document.getElementById("testo").style.display='none';
+
+  function scompare(visual) {
+    if(document.getElementById("visual").style.display=='') {
+       document.getElementById("visual").style.display='none';
+       document.getElementById("testo").style.display='';
+       document.getElementById("read").innerHTML = "Read less";
+    }
+    else{
+      document.getElementById("visual").style.display='';
+      document.getElementById("testo").style.display='none';
+      document.getElementById("read").innerHTML = "Read more";
+    }
+  }
+  </script>
+
+
+
+</html>
