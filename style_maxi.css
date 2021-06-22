@@ -12,9 +12,7 @@ body{
   font-family: 'Work Sans';
   cursor: default;
 }
-::-webkit-scrollbar { 
-    display: none; 
-}
+
 a{
    text-decoration: none;
    color: inherit;
@@ -152,6 +150,10 @@ em{
   position: absolute;
   overflow:scroll;
   z-index: +1;
+	
+}
+#griglia::-webkit-scrollbar { 
+    display: none; 
 }
 #unouno{
   height: 16vw;
