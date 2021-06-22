@@ -8,6 +8,7 @@ body{
   position: absolute;
   font-family: 'Work Sans';
   cursor: default;
+overflow-x:hidden;
 }
 a{
    text-decoration: none;
@@ -109,6 +110,13 @@ em{
   position: relative;
   overflow:scroll;
 }
+#what::-webkit-scrollbar { 
+    display: none; 
+}
+#what{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 
 /**projects**/
@@ -127,6 +135,13 @@ em{
   position: absolute;
   overflow:scroll;
   z-index: +1;
+}
+#griglia::-webkit-scrollbar { 
+    display: none; 
+}
+#griglia{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 #unouno{
   height: 56vw;
@@ -222,6 +237,13 @@ em{
   position: absolute;
   overflow:scroll;
   z-index: +2;
+}
+#griglia_link::-webkit-scrollbar { 
+    display: none; 
+}
+#griglia_link{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .nomeLink{
   font-family:WorkSansSemiBold;
@@ -361,6 +383,13 @@ em{
 	font-size: 25px;
 	position: relative;
 }
+	#who::-webkit-scrollbar { 
+    display: none; 
+}
+#who{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 /**progetti**/
 #desc{
@@ -403,5 +432,12 @@ em{
   position: relative;
   overflow:scroll;
   z-index: 0;
+}
+	#testo::-webkit-scrollbar { 
+    display: none; 
+}
+#testo{
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 }
