@@ -131,7 +131,7 @@ em{
   overflow:scroll;
   z-index: +1;
 }
-#what::-webkit-scrollbar { width: 0 }
+
 
 
 /**projects**/
@@ -255,6 +255,9 @@ em{
   position: absolute;
   overflow:scroll;
   z-index: +2;
+}
+#griglia_link::-webkit-scrollbar { 
+    display: none; 
 }
 .nomeLink{
   font-family:WorkSansSemiBold;
