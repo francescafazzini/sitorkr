@@ -12,7 +12,6 @@ body{
   font-family: 'Work Sans';
   cursor: default;
 }
-body::-webkit-scrollbar { width: 0 }
 
 a{
    text-decoration: none;
@@ -132,6 +131,7 @@ em{
   overflow:scroll;
   z-index: +1;
 }
+#what::-webkit-scrollbar { width: 0 }
 
 
 /**projects**/
