@@ -12,19 +12,13 @@ body{
   font-family: 'Work Sans';
   cursor: default;
 }
-body::-webkit-scrollbar {
-  display: none;
+html {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
-body {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.scroll::-webkit-scrollbar {
-  display: none;
-}
-.scroll {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+
+html::-webkit-scrollbar {
+    width: 0px; /* For Chrome, Safari, and Opera */
 }
 a{
    text-decoration: none;
